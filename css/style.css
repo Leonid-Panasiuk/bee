@@ -243,6 +243,10 @@
         text-align: center;
     }
 
+    #after-hero {
+        padding: 0 25px;
+    }
+
     .first-slide, .second-slide {
         background-position: center top;
         background-size: 400px;
