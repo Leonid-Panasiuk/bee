@@ -338,6 +338,41 @@
     font-size: 1.5rem;
 }
 
+/* <------------- Feedback ------------->*/
+
+#feedback {
+    background-image: url(../img/bg-banner-h1-2.jpg);
+    background-size: cover;
+    padding: 85px 0 70px;
+    text-align: center;
+    padding: 5% 20%;
+}
+
+#feedback p:first-child {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.4em;
+    color: #666;
+    font-family: "Kreon",Kreon;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.author {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 15px;
+    font-family: "Kreon",Kreon;
+    margin-top: 10px;
+}
+
+#feedback p:last-child {
+    color: #f4900a;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+}
+
 /* <------------- Media ------------->*/
 
 @media (max-width: 1920px) {
