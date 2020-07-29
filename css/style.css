@@ -301,6 +301,10 @@
     fill: #fff;
 }
 
+.about-btn:hover {
+    background: linear-gradient(90deg, rgb(113, 179, 33) 0%, rgb(241, 152, 51) 100%);
+}
+
 .about-list {
     list-style: none;
 }
@@ -401,5 +405,17 @@
 
     .hero {
         text-align: center;
+    }
+
+    .about-col {
+        text-align: center;
+    }
+
+    .useful p:first-child{
+        text-align: center;
+    }
+
+    .about-btn {
+        margin-bottom: 25px;
     }
 }
