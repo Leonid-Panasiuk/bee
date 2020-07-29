@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* <------------- Navbar ------------->*/
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.nav-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.nav-link {
+    color: #212121 !important;
+    padding: 10px 20px !important;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: #6fb321!important;
+}
+
+
+/* <------------- Slider ------------->*/
+
+
+.slider .slick-slide {
+    height: 100vh;
+    outline: none;
+    max-width: 100%;
+}
+
+.slick-prev {
+    left: 10px !important;
+    z-index: 1!important;
+}
+
+.slick-next {
+    right: 10px !important;
+}
+
+.slick-next:before {
+    color: #6fb321 !important;
+}
+
+.slick-prev:before {
+    color: #6fb321 !important;
+}
+
+.first-slide {
+    background-image: url(../img/slider-1.png);
+    background-repeat: no-repeat;
+    background-position: 600px 62px;
+}
+
+.second-slide {
+    background-image: url(../img/slider-2.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* <------------- Hero ------------->*/
+
+.hero {
+    display: flex;
+    position: relative;
+}
+
+
+.text-wrap {
+    width: 600px;
+    text-align: center;
+}
+
+.arrivals {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 43px;
+    color: rgb(51, 51, 51);
+}
+
+.beetox {
+    font-family: 'Playfair Display', serif;
+    color: rgb(111, 179, 33);
+    line-height: 59px;
+    font-weight: 900;
+    font-size: 96px;
+}
+
+.last {
+    font-size: 21px;
+    color: rgb(51, 51, 51);
+}
+
+.shop-now {
+    background: linear-gradient(90deg, rgb(241, 152, 51) 0%, rgb(113, 179, 33) 100%);
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    text-align: inherit;
+    line-height: 23px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 14px;
+    border-color: rgba(255, 255, 255, 0);
+    margin: 0px;
+    border-radius: 50px;
+    padding: 12px 35px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transform-origin: 50% 50% 0px;
+    border-width: 0px;
+    border-style: solid;
+}
+
+.shop-now:hover {
+    background: linear-gradient(90deg, rgb(113, 179, 33) 0%, rgb(241, 152, 51) 100%);
+}
+
+
+/* <------------- After Hero ------------->*/
+
+
+.after-hero {
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+.after-hero-wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 25px;
+}
+
+.after-text-wrap {
+    margin-left: 15px;
+}
+
+.after-text-wrap p:first-child {
+    color: black;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.after-text-wrap p:last-child {
+    font-size: 15px;
+    line-height: 1.3em;
+    color: #666;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* <------------- Products ------------->*/
+
+#products {
+    overflow: hidden;
+}
+
+#products h1 {
+    font-family: "Great Vibes",Kreon;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #f4900a;
+}
+
+#products h2 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #212121;
+}
+
+.products-text {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.product-col {
+    margin-top: 70px;
+}
+
+.product-col p {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+
+.product-col p:hover {
+    color: #f4900a;
+    cursor: pointer;
+}
+
+.product-col p:last-child {
+    color: #f4900a;
+}
+
+/* <------------- Media ------------->*/
+
+@media (max-width: 1920px) {
+    .first-slide, .second-slide {
+        background-repeat: no-repeat;
+        background-position: 858px 100px;
+        background-size: 1000px;
+    }
+
+    .first-slide-text-wrap {
+        padding-top: 150px;
+        padding-left: 360px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .first-slide, .second-slide {
+        background-repeat: no-repeat;
+        background-position: 600px 62px;
+        background-size: 700px;
+    }
+
+    .first-slide-text-wrap {
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-slide-text-wrap p {
+        text-align: center;
+    }
+
+    .first-slide, .second-slide {
+        background-position: center top;
+        background-size: 400px;
+    }
+
+    .beetox {
+        font-size: 50px;
+    }
+
+    .last {
+        font-size: 15px;
+    }
+
+    .first-slide-text-wrap {
+        padding-top: 50%;
+        padding-left: 0;
+    }
+
+    .text-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .hero {
+        text-align: center;
+    }
+}
