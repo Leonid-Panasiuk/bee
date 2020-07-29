@@ -4,8 +4,6 @@
     padding: 0;
 }
 
-
-
 /* <------------- Navbar ------------->*/
 
 .navbar .navbar-collapse {
@@ -19,6 +17,15 @@
     text-transform: uppercase;
     color: black !important;
 }
+
+.navbar-toggler {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-collapse{
+    position:relative;
+  }
 
 .navbar-toggler:focus {
     outline: none;
