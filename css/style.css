@@ -18,15 +18,6 @@
     color: black !important;
 }
 
-.navbar-toggler {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar-collapse{
-    position:relative;
-  }
-
 .navbar-toggler:focus {
     outline: none;
 }
