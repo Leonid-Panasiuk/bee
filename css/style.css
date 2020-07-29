@@ -75,11 +75,9 @@
 
 /* <------------- Hero ------------->*/
 
-.hero {
-    display: flex;
-    position: relative;
+#hero {
+    overflow: hidden;
 }
-
 
 .text-wrap {
     width: 600px;
