@@ -194,7 +194,17 @@
     margin-top: 70px;
 }
 
+.product-col img {
+    transition: all 0.2s;
+}
+
+.product-col img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .product-col p {
+    margin-top: 10px;
     text-align: center;
     font-size: 1.125rem;
     font-weight: 400;
@@ -208,6 +218,38 @@
 
 .product-col p:last-child {
     color: #f4900a;
+}
+
+/* <------------- Happy ------------->*/
+
+#happy {
+    background-image: url(../img/bg-banner-h1-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.happy-text-wrap {
+    text-align: center;
+}
+
+.happy-text-wrap h1 {
+    font-family: "Playfair Display",Kreon;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.2em;
+    color: #6fb321;
+}
+
+.happy-text-wrap p {
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
 }
 
 /* <------------- Media ------------->*/
