@@ -583,6 +583,10 @@
         padding-top: 150px;
         padding-left: 360px;
     }
+
+    #hero {
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width: 1360px) {
