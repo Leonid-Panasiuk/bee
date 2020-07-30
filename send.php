@@ -12,11 +12,11 @@ echo '<h1 style="color:red;">Пожалуйста заполните все по
 echo '<meta http-equiv="refresh" content="2; url=http://'.$_SERVER['SERVER_NAME'].'">';
 }
 else{
-$price = '149 грн'; // Указать цену со скидкой
-$subject = 'Новый заказ [Twisty Petz]'; // заголовок письмя
+// $price = '149 грн'; // Указать цену со скидкой
+$subject = 'Новый заказ [Bee]'; // заголовок письмя
 $addressat = "lona.panasuk@gmail.com"; // Ваш Электронный адрес
 $success_url = './form-ok.php?name='.$_POST['name'].'&phone='.$_POST['phone'].'&time='.$_POST['Время_звонка'].'';
-$message = "Имя: {$name}\nТелефон: {$phone}\nЦена: {$price}";
+$message = "Имя: {$name}\nТелефон: {$phone}";
 $verify = mail($addressat,$subject,$message,"Content-type:text/plain;charset=utf-8\r\n");
 if ($verify == 'true'){
     header('Location: '.$success_url);
