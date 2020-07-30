@@ -29,7 +29,7 @@
 }
 
 .nav-link:hover {
-    color: #6fb321!important;
+    color: #6fb321 !important;
 }
 
 
@@ -44,7 +44,7 @@
 
 .slick-prev {
     left: 10px !important;
-    z-index: 1!important;
+    z-index: 1 !important;
 }
 
 .slick-next {
@@ -133,7 +133,7 @@
 
 
 .after-hero {
-    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
 }
 
 .after-hero-wrap {
@@ -168,7 +168,7 @@
 }
 
 #products h1 {
-    font-family: "Great Vibes",Kreon;
+    font-family: "Great Vibes", Kreon;
     font-size: 36px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -237,7 +237,7 @@
 }
 
 .happy-text-wrap h1 {
-    font-family: "Playfair Display",Kreon;
+    font-family: "Playfair Display", Kreon;
     font-size: 60px;
     font-weight: 900;
     line-height: 1.2em;
@@ -259,7 +259,7 @@
 }
 
 .about-col p:first-child {
-    font-family: "Great Vibes",Kreon;
+    font-family: "Great Vibes", Kreon;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -279,17 +279,17 @@
 .about-desc {
     line-height: 1.56;
     color: #666;
-    font-family: "Kreon",Kreon;
+    font-family: "Kreon", Kreon;
     font-weight: 300;
 }
 
 .about-btn {
     text-transform: uppercase;
     background-color: transparent;
-    background-image: linear-gradient(90deg,#f7a615 0%,#77b220 100%);
+    background-image: linear-gradient(90deg, #f7a615 0%, #77b220 100%);
     border-radius: 30px;
     padding: 15px 40px;
-    font-family: "Kreon",Kreon;
+    font-family: "Kreon", Kreon;
     font-weight: 400;
     font-size: 15px;
     border: none;
@@ -350,7 +350,7 @@
     font-style: italic;
     line-height: 1.4em;
     color: #666;
-    font-family: "Kreon",Kreon;
+    font-family: "Kreon", Kreon;
     font-weight: 300;
     margin-bottom: 1.5rem;
 }
@@ -359,7 +359,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 15px;
-    font-family: "Kreon",Kreon;
+    font-family: "Kreon", Kreon;
     margin-top: 10px;
 }
 
@@ -370,10 +370,115 @@
     font-weight: 400;
 }
 
+/* <------------- Blog ------------->*/
+
+.blog-heading {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.blog-heading h1 {
+    color: #f4900a;
+    font-family: "Great Vibes", Kreon;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.blog-heading h2 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-family: "Kreon", Kreon;
+    color: #212121;
+}
+
+.blog-card {
+    height: 100%;
+    padding-bottom: 100px;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    transition: all 0.2s;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-card:hover {
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+}
+
+.blog-img {
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.blog-img:hover {
+    transform: scale(1.1);
+}
+
+.img-banner {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 159px;
+}
+
+.img-banner p {
+    background: #f4900a;
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: top;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    padding: 3px 15px;
+    color: #fff;
+}
+
+.after-banner-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.after-banner-text p {
+    color: #212121;
+    font-size: 20px;
+    font-family: "Kreon",Kreon;
+    font-weight: 400;
+}
+
+.after-banner-text a {
+    text-decoration: none;
+    font-family: "Kreon",Kreon;
+    font-weight: 300;
+    background: 0 0;
+    color: #f4900a;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.after-banner-text a:hover {
+    color: #212121;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
 /* <------------- Media ------------->*/
 
 @media (max-width: 1920px) {
-    .first-slide, .second-slide {
+
+    .first-slide,
+    .second-slide {
         background-repeat: no-repeat;
         background-position: 858px 100px;
         background-size: 1000px;
@@ -386,7 +491,9 @@
 }
 
 @media (max-width: 1360px) {
-    .first-slide, .second-slide {
+
+    .first-slide,
+    .second-slide {
         background-repeat: no-repeat;
         background-position: 600px 62px;
         background-size: 700px;
@@ -407,7 +514,8 @@
         padding: 0 25px;
     }
 
-    .first-slide, .second-slide {
+    .first-slide,
+    .second-slide {
         background-position: center top;
         background-size: 400px;
     }
@@ -443,7 +551,7 @@
         text-align: center;
     }
 
-    .useful p:first-child{
+    .useful p:first-child {
         text-align: center;
     }
 
