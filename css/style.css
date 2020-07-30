@@ -403,6 +403,7 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 35px;
+    margin-right: 2rem;
 }
 
 .blog-card:hover {
@@ -482,6 +483,7 @@
     width: 100%;
     height: 100%;
     padding: 70px;
+    overflow: hidden;
 }
 
 .form-btn {
@@ -651,5 +653,20 @@
 
     .about-btn {
         margin-bottom: 25px;
+    }
+
+    .blog-card {
+        margin-right: 0!important;
+        margin-left: 0!important;
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+
+    .contact-wrap {
+        margin-top: 25px;
+    }
+
+    #contact {
+        background-size: cover;
     }
 }
