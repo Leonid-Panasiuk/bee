@@ -647,6 +647,12 @@
         display: none;
     }
 
+    .slider .slick-slide {
+        height: 65vh;
+        background-position: right -40px;
+        background-size: cover;
+    }
+
 
     .burger-logo {
         width: 12%;
@@ -740,5 +746,9 @@
 
     #contact {
         background-size: cover;
+    }
+
+    #happy {
+        height: 65vh;
     }
 }
