@@ -29,3 +29,13 @@ AOS.init({
     item.innerHTML = '<div class="aos-item__inner"><h3>' + itemsCounter + '</h3></div>';
     itemsCounter++;
 }
+
+//ANCHORS
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+  });
+  

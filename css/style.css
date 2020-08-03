@@ -119,12 +119,9 @@
     line-height: 59px;
     font-weight: 900;
     font-size: 96px;
+    margin-bottom: 55px;
 }
 
-.last {
-    font-size: 21px;
-    color: rgb(51, 51, 51);
-}
 
 .shop-now {
     background: linear-gradient(90deg, rgb(241, 152, 51) 0%, rgb(113, 179, 33) 100%);
@@ -150,6 +147,8 @@
 
 .shop-now:hover {
     background: linear-gradient(90deg, rgb(113, 179, 33) 0%, rgb(241, 152, 51) 100%);
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -218,9 +217,6 @@
     margin-top: 70px;
 }
 
-.text-wrap {
-    
-}
 
 .product-col img {
     transition: all 0.2s;
@@ -252,37 +248,29 @@
 /* <------------- Happy ------------->*/
 
 #happy {
-    background-image: url(../img/bg-banner-h1-1.png);
-    background-position: top center;
+    background-image: url(../img/banner-hp.jpg);
     background-repeat: no-repeat;
-    height: 100%;
+    background-size: 100% 100%;
+    height: 100vh;
     width: 100%;
-    min-height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom-right-radius: 400px 30px;
+    border-bottom-left-radius: 400px 30px;
+    margin: 85px 0;
 }
 
-.happy-text-wrap {
-    text-align: center;
-    overflow: hidden;
-}
 
 .happy-text-wrap h1 {
     font-family: "Playfair Display", Kreon;
     font-size: 60px;
     font-weight: 900;
     line-height: 1.2em;
-    color: #6fb321;
+    color: #000000;
     overflow: hidden;
 }
 
-.happy-text-wrap p {
-    font-size: 24px;
-    color: black;
-    font-weight: 400;
-    overflow: hidden;
-}
 
 /* <------------- About ------------->*/
 
@@ -313,6 +301,7 @@
     color: #666;
     font-family: "Kreon", Kreon;
     font-weight: 300;
+    margin-bottom: 25px;
 }
 
 .about-btn {
@@ -333,6 +322,10 @@
     background: linear-gradient(90deg, rgb(113, 179, 33) 0%, rgb(241, 152, 51) 100%);
 }
 
+.about-list-item {
+    text-align: left;
+}
+
 .about-list {
     list-style: none;
 }
@@ -341,6 +334,8 @@
     color: #71b321;
     font-size: 24px;
     transition: all 0.2s;
+    margin-right: 5px;
+    vertical-align:middle;
 }
 
 .about-list-item i:hover {
@@ -354,6 +349,11 @@
     align-self: center;
     padding-left: 5px;
     color: #666;
+    vertical-align:middle;
+}
+
+.useful {
+    text-align: center;
 }
 
 .useful span:first-child {
