@@ -787,6 +787,11 @@
     #happy {
         height: 65vh;
     }
+
+    #feedback {
+        background-position: center;
+    }
+    
 }
 
 /* iPhone X and Xs Max */
