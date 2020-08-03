@@ -646,6 +646,7 @@
 
     .slider .slick-slide {
         height: 65vh;
+        background-position: -45px;
     }
 
 
