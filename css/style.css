@@ -86,7 +86,7 @@
 }
 
 .second-slide {
-    background-image: url(../img/slider-2.jpg);
+    background-image: url(../img/slider-1.png);
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -593,7 +593,7 @@
 
 .link-item:hover {
     text-decoration: none;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .link-item img {
@@ -605,6 +605,10 @@
 .link-item i {
     color: black;
     margin: 10px;
+}
+
+.link-item i:hover {
+    color: #71b321;
 }
 
 
