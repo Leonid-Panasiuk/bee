@@ -218,6 +218,10 @@
     margin-top: 70px;
 }
 
+.text-wrap {
+    
+}
+
 .product-col img {
     transition: all 0.2s;
 }
@@ -226,6 +230,7 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+
 
 .product-col p {
     margin-top: 10px;
