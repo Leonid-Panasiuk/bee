@@ -269,6 +269,7 @@
     line-height: 1.2em;
     color: #000000;
     overflow: hidden;
+    text-align: center;
 }
 
 
@@ -451,10 +452,6 @@
     text-align: center;
     transition: all .2s ease-in-out;
 }
-
-/* .blog-img:hover {
-    transform: scale(1.1);
-} */
 
 .img-banner {
     position: absolute;
