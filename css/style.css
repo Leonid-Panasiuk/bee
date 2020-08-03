@@ -86,8 +86,8 @@
 }
 
 .second-slide {
-    background-image: url(../img/slider-2.png);
-    background-position: center bottom;
+    background-image: url(../img/slider-2.jpg);
+    background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
