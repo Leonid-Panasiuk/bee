@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #ec7113;
+}
+
 /* <------------- Logo ------------->*/
 
 .logo-wrap {
@@ -76,27 +80,41 @@
 }
 
 .first-slide {
-    background-image: url(../img/slider-1.png);
-    /* background-position: center bottom; */
-    background-position: 0px -290px;
-    background-size: cover;
+    /* background-image: url(../img/slider-1.png);
     background-repeat: no-repeat;
+    background-position: 640px 62px; */
     width: 100%;
     height: 100vh;
 }
 
-.second-slide {
-    background-image: url(../img/slider-1.png);
-    background-position: center right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-}
 
 /* <------------- Hero ------------->*/
 
 #hero {
     overflow: hidden;
+    position: relative;
+    background-color: rgb(247, 243, 240);
+}
+
+.honey-hero {
+    position: absolute;
+    right: 0;
+    right: 100px;
+    width: 500px;
+}
+
+.honey-hero-100 {
+    position: absolute;
+    right: 40px;
+    top: 100px; 
+    width: 150px;
+}
+
+.honey-hero-right {
+    position: absolute;
+    right: 0;
+    bottom: 250px;
+    width: 120px;
 }
 
 .text-wrap {
@@ -189,8 +207,44 @@
 
 /* <------------- Products ------------->*/
 
+
+/* @keyframes myship {
+    from {
+        left: 20px;
+        top: 140px;
+    }
+
+    to {
+        left: 100%;
+        top: 340px;
+    }
+} */
+
+@keyframes bounce {
+ 
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+.bee {
+    position: absolute;
+    width: 30px;
+    left: 100px;
+    top: 260px;
+    animation: bounce 3s infinite;
+    z-index: 1;
+}
+
 #products {
     overflow: hidden;
+    position: relative;
 }
 
 #products h1 {
@@ -336,7 +390,7 @@
     font-size: 24px;
     transition: all 0.2s;
     margin-right: 5px;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 .about-list-item i:hover {
@@ -350,7 +404,7 @@
     align-self: center;
     padding-left: 5px;
     color: #666;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 .useful {
@@ -456,6 +510,7 @@
     vertical-align: middle;
     text-align: center;
     transition: all .2s ease-in-out;
+    padding-bottom: 25px;
 }
 
 .img-banner {
@@ -465,7 +520,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    bottom: 159px;
+    bottom: 137px;
 }
 
 .img-banner p {
@@ -588,7 +643,7 @@
 }
 
 .link-item {
-  transition: all .3s;
+    transition: all .3s;
 }
 
 .link-item:hover {
@@ -636,10 +691,16 @@
 
 /* <------------- Media ------------->*/
 
-@media (max-width: 1920px) {
+@media only screen and (max-width: 1920px) {
 
     .burger-logo {
         display: none;
+    }
+
+    .first-slide {
+        background-repeat: no-repeat;
+        background-position: 858px 100px;
+        background-size: 1000px;
     }
 
     .logo-wrap img {
@@ -652,7 +713,7 @@
     }
 
     #hero {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 }
 
@@ -660,6 +721,12 @@
 
     .burger-logo {
         display: none;
+    }
+
+    .first-slide {
+        background-repeat: no-repeat;
+        background-position: 640px 62px;
+        background-size: 700px;
     }
 
 
@@ -680,14 +747,23 @@
         display: none;
     }
 
+    .first-slide {
+        background-position: center top;
+        background-size: 200px;
+    }
+
+    .second-slide {
+
+    }
+
     .slider .slick-slide {
-        height: 65vh;
-        background-position: -45px;
+        height: 80vh;
+        background-position: 50% 5%;
     }
 
 
     .burger-logo {
-        width: 12%;
+        width: 20%;
         display: inline-block;
         position: relative;
         top: 0;
@@ -722,7 +798,7 @@
     }
 
     .first-slide-text-wrap {
-        padding-top: 10%;
+        padding-top: 50%;
         padding-left: 0;
     }
 
@@ -791,17 +867,13 @@
     #feedback {
         background-position: center;
     }
-    
+
 }
 
 /* iPhone X and Xs Max */
-@media only screen 
-    and (min-device-width: 375px) 
-    and (min-device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3)
-    and (orientation: portrait) { 
-        .slider .slick-slide {
-            height: 65vh;
-            background-position: center;
-        }
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .slider .slick-slide {
+        height: 65vh;
+        background-position: center;
+    }
 }
