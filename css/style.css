@@ -262,15 +262,37 @@ body {
 }
 
 @keyframes slideInLeft {
-    from {
+    /* from {
         transform: translate3d(-100%, 0, 0);
         visibility: visible;
     }
 
     to {
         transform: translate3d(0, 0, 0);
+    } */
+
+    60%, 75%, 90%, from, to {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+    }
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+    to {
+        transform: none;
     }
 }
+
 
 .hero-left-top {
     position: absolute;
@@ -279,13 +301,35 @@ body {
     animation: slideInLeft 2s;
 }
 
+@keyframes bounceInRight {
+    60%, 75%, 90%, from, to {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+    }
+    from {
+        opacity: 0;
+        transform: translate3d(0, 3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(0, -20px, 0);
+    }
+    75% {
+        transform: translate3d(0, 10px, 0);
+    }
+    90% {
+        transform: translate3d(0, -5px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
 
 .hero-left-bottom {
     position: absolute;
     width: 100px;
     bottom: 20px;
     left: 0;
-    animation: slideInLeft 2s;
+    animation: bounceInRight 2s;
 }
 
 .text-wrap {
