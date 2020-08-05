@@ -942,6 +942,21 @@ body {
 
     .honey-hero-right {
         bottom: 20px;
+        animation: bounceInRight 3.5s!important;
+    }
+
+    .hero-left-top {
+        position: absolute;
+        top: 30px;
+        width: 100px;
+        animation: slideInLeft 3s!important;
+    }
+
+    .hero-left-top {
+        position: absolute;
+        top: 30px;
+        width: 100px;
+        animation: slideInLeft 3.5s;
     }
 
     /* .first-slide {
