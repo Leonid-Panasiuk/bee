@@ -176,11 +176,28 @@ body {
     animation: bounce-bee-3 2s infinite;
 }
 
+@keyframes bar
+{
+  0% {
+    top: 0%;
+  }
+
+  50% {
+      margin-right: 30%;
+      z-index: 10;
+  }
+  100% {
+    top: 100%;;
+  }
+}
+
 .bee-4 {
     position: absolute;
     right: 10px;
     top: 10px;
     width: 30px;
+    animation: bar 35s infinite;
+    z-index: 10;
 }
 
 @keyframes fly {
