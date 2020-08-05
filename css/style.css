@@ -1117,4 +1117,17 @@ body {
         bottom: 0;
     }
 
+    .bee-3 {
+        left: 50%;
+    }
+
+    .first-slide-text-wrap p {
+        font-size: 34px;
+    }
+
+    .beetox {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
 }
