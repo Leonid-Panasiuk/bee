@@ -186,23 +186,14 @@ body {
 @keyframes fly {
     0% {
         left: 0%;
-        margin-top: 5%;
     }
 
-    20% {
-        left: 20%;
-        margin-top: 10%;
-    }
     40% {
-        left: 40%;
         margin-top: 15%;
     }
+
     60% {
-        left: 60%;
-        margin-bottom: 30%;
-    }
-    80% {
-        left: 80%;
+        margin-bottom: 10%;
     }
 
     90% {
@@ -218,7 +209,7 @@ body {
     position: absolute;
     width: 30px;
     top: 50%;
-    animation: fly 10s infinite;
+    animation: fly 30s infinite;
     z-index: 2;
 }
 
@@ -893,12 +884,27 @@ body {
         display: none;
     }
 
-    .first-slide {
-        background-position: center top;
-        background-size: 200px;
+    .honey-hero {
+        display: none;
     }
 
-    .second-slide {}
+    .honey-hero-100 {
+        display: none;
+    }
+
+    .bee-1 {
+        left: 10px;
+    }
+
+    .honey-hero-right {
+        bottom: 20px;
+    }
+
+    /* .first-slide {
+        background-position: center top;
+        background-size: 200px;
+    } */
+
 
     .slider .slick-slide {
         height: 80vh;
