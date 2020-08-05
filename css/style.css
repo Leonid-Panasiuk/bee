@@ -186,19 +186,20 @@ body {
 @keyframes fly {
     0% {
         left: 0%;
-        bottom: 10%;
+        margin-top: 5%;
     }
 
     20% {
         left: 20%;
-        
+        margin-top: 10%;
     }
     40% {
         left: 40%;
-        
+        margin-top: 15%;
     }
     60% {
-        bottom: 60%;
+        left: 60%;
+        margin-bottom: 30%;
     }
     80% {
         left: 80%;
