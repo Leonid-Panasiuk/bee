@@ -941,6 +941,10 @@ body {
 
 @media (max-width: 768px) {
 
+    .mobile-logo {
+        background-color: red;
+    }
+
     .logo-wrap {
         display: none;
     }
@@ -958,12 +962,12 @@ body {
     }
 
     .honey-hero-right {
-        bottom: 50px;
+        bottom: 140px;
         animation: bounceInRight 3.5s!important;
     }
 
     .hero-left-bottom { 
-        bottom: 50px;
+        bottom: 140px;
     }
 
     .hero-left-top {
@@ -1099,4 +1103,18 @@ body {
         height: 65vh;
         background-position: center;
     }
+}
+
+/* 5 */ 
+
+@media screen and (device-aspect-ratio: 40/71) {
+
+    .honey-hero-right {
+        bottom: 0;
+    }
+
+    .hero-left-bottom {
+        bottom: 0;
+    }
+
 }
