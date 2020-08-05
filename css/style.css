@@ -96,24 +96,39 @@ body {
     background-color: rgb(247, 243, 240);
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        transform: none;
+    }
+}
+
 .honey-hero {
     position: absolute;
     right: 0;
     right: 100px;
     width: 500px;
+    animation: fadeIn 1.5s;
 }
 
-@keyframes bounce {
- 
+@keyframes bounce-bee-1 {
+
     0% {
         transform: translateY(0);
-      }
-      50% {
+    }
+
+    50% {
         transform: translateY(-30px);
-      }
-      100% {
+    }
+
+    100% {
         transform: translateY(0);
-      }
+    }
 }
 
 .bee-1 {
@@ -121,7 +136,7 @@ body {
     width: 30px;
     left: 100px;
     top: 260px;
-    animation: bounce 3s infinite;
+    animation: bounce-bee-1 3s infinite;
     z-index: 1;
 }
 
@@ -133,11 +148,68 @@ body {
     z-index: 2;
 }
 
+@keyframes bounce-bee-3 {
+
+    0% {
+        transform: translateY(0);
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: rotate(10deg);
+    }
+}
+
+.bee-3 {
+    position: absolute;
+    z-index: 2;
+    width: 60px;
+    top: 30px;
+    right: 200px;
+    transform: rotate(10deg);
+    animation: bounce-bee-3 2s infinite;
+}
+
+.bee-4 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+}
+
 .honey-hero-100 {
     position: absolute;
     right: 40px;
-    top: 100px; 
+    top: 100px;
     width: 150px;
+}
+
+@keyframes bounceInRight {
+    60%, 75%, 90%, from, to {
+    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+}
+from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+}
+60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+}
+75% {
+    transform: translate3d(10px, 0, 0);
+}
+90% {
+    transform: translate3d(-5px, 0, 0);
+}
+to {
+    transform: none;
+}
 }
 
 .honey-hero-right {
@@ -145,19 +217,34 @@ body {
     right: 0;
     bottom: 250px;
     width: 120px;
+    animation: bounceInRight 2s;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .hero-left-top {
     position: absolute;
     top: 30px;
     width: 100px;
+    animation: slideInLeft 2s;
 }
+
 
 .hero-left-bottom {
     position: absolute;
     width: 100px;
     bottom: 20px;
     left: 0;
+    animation: slideInLeft 2s;
 }
 
 .text-wrap {
@@ -761,9 +848,7 @@ body {
         background-size: 200px;
     }
 
-    .second-slide {
-
-    }
+    .second-slide {}
 
     .slider .slick-slide {
         height: 80vh;
