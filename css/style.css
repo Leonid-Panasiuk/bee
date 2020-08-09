@@ -1132,6 +1132,19 @@ body {
 
 }
 
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .honey-hero-right, .hero-left-top, .hero-left-bottom {
+        width: 100px;
+    }
+
+}
 /* iPhone X and Xs Max */
 @media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
     .slider .slick-slide {
