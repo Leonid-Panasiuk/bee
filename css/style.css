@@ -90,7 +90,8 @@ body {
 #hero {
     overflow: hidden;
     position: relative;
-    background-color: rgb(247, 243, 240);
+    /* background-color: rgb(247, 243, 240); */
+    background-color: 	rgb(254, 189, 89);
 }
 
 @keyframes fadeIn {
@@ -906,6 +907,10 @@ body {
         display: none;
     }
 
+    .mobile-logo {
+        display: none;
+    }
+
     .first-slide {
         background-repeat: no-repeat;
         background-position: 858px 100px;
@@ -953,7 +958,13 @@ body {
 @media (max-width: 768px) {
 
     .mobile-logo {
-        background-color: red;
+        display: inline-block;
+        position: absolute;
+        top: -50px;
+    }
+
+    .bee-3 {
+        display: none;
     }
 
     .logo-wrap {
