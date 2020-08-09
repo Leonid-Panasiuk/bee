@@ -1141,7 +1141,7 @@ body {
   and (-webkit-min-device-pixel-ratio: 2) { 
 
     .honey-hero-right, .hero-left-top, .hero-left-bottom {
-        width: 100px;
+        width: 75px;
     }
 
 }
