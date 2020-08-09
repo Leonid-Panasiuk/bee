@@ -1182,6 +1182,10 @@ body {
         font-size: 40px;
     }
 
+    .honey-hero-right, .hero-left-top, .hero-left-bottom {
+        width: 60px;
+    }
+
 }
 
 /* Pro */ 
