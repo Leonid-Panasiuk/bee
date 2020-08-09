@@ -287,7 +287,7 @@ body {
 .honey-hero-right {
     position: absolute;
     right: 0;
-    bottom: 150px;
+    bottom: 50px;
     width: 120px;
     animation: bounceInRight 2s;
 }
@@ -350,7 +350,7 @@ body {
 .hero-left-bottom {
     position: absolute;
     width: 100px;
-    bottom: 150px;
+    bottom: 50px;
     left: 0;
     animation: bounceInRight 2s;
 }
