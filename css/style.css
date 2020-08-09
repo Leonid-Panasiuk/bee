@@ -92,6 +92,7 @@ body {
     position: relative;
     /* background-color: rgb(247, 243, 240); */
     background-color: 	rgb(254, 189, 89);
+    height: 85vh;
 }
 
 @keyframes fadeIn {
@@ -349,7 +350,7 @@ body {
 .hero-left-bottom {
     position: absolute;
     width: 100px;
-    bottom: 20px;
+    bottom: 150px;
     left: 0;
     animation: bounceInRight 2s;
 }
@@ -961,6 +962,10 @@ body {
         display: inline-block;
         position: absolute;
         top: -50px;
+    }
+
+    #hero {
+        height: 100vh;
     }
 
     .bee-3 {
