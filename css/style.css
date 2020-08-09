@@ -969,7 +969,7 @@ body {
     }
 
     #hero {
-        height: 100vh;
+        height: 80vh;
     }
 
     .bee-3 {
@@ -993,12 +993,12 @@ body {
     }
 
     .honey-hero-right {
-        bottom: 140px;
+        bottom: 0px;
         animation: bounceInRight 3.5s!important;
     }
 
     .hero-left-bottom { 
-        bottom: 140px;
+        bottom: 0px;
     }
 
     .hero-left-top {
