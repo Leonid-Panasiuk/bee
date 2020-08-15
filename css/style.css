@@ -90,7 +90,6 @@ body {
 #hero {
     overflow: hidden;
     position: relative;
-    /* background-color: rgb(247, 243, 240); */
     background-color: 	rgb(254, 189, 89);
     height: 85vh;
 }
@@ -494,6 +493,7 @@ body {
     font-size: 1.125rem;
     font-weight: 400;
     transition: all 0.2s;
+    height: 50px;
 }
 
 .product-col p:hover {
@@ -629,6 +629,10 @@ body {
 
 .useful p:first-child {
     font-size: 1.5rem;
+}
+
+.about-pic {
+    border-radius: 50px;
 }
 
 /* <------------- Feedback ------------->*/
@@ -1130,6 +1134,12 @@ body {
         background-position: center;
     }
 
+}
+
+@media (max-width: 320px) {
+    .product-col p {
+        height: auto;
+    }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
