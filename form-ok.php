@@ -1,6 +1,7 @@
 <?php
 $name = $_GET['name'];
 $phone = $_GET['phone'];
+$cart = $_GET['cart'];
 ?>
 
 <!DOCTYPE html>
@@ -134,6 +135,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li>
 <span>Телефон: </span>
 <span id="tel"><?=$phone ?></span>
+</li>
+<li>
+<span>Товар: </span>
+<span id="client"><?=$cart ?></span>
 </li>
 </ul>
 <br>
