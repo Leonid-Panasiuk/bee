@@ -788,6 +788,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 70px 70px 0px 70px;
+    background-color: #F9F9F9;
 }
 
 .form-btn {
@@ -855,6 +856,7 @@ body {
 .links-container {
     display: flex;
     align-items: center;
+    padding-top: 20px;
 }
 
 .link-item {
@@ -1132,6 +1134,7 @@ body {
 
     #contact {
         background-size: cover;
+       
     }
 
     #happy {
