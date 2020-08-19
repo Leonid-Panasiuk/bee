@@ -2,6 +2,7 @@
 $name = $_GET['name'];
 $phone = $_GET['phone'];
 $cart = $_GET['cart'];
+$delivery = $_GET['delivery'];
 ?>
 
 <!DOCTYPE html>
@@ -9,30 +10,6 @@ $cart = $_GET['cart'];
 
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 <head>
-
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '636576506739398');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=636576506739398&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-
-<script>
-  fbq('track', 'Lead');
-</script>
-
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -116,12 +93,6 @@ $cart = $_GET['cart'];
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC798XQ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
 <div class="block_success">
 <h2 style="text-transform: uppercase;">Поздравляем! Ваш заказ принят!</h2>
 <p class="success"> В ближайшее время с вами свяжется оператор для подтверждения заказа. Пожалуйста, включите ваш контактный телефон. </p>
@@ -138,7 +109,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </li>
 <li>
 <span>Товар: </span>
-<span id="client"><?=$cart ?></span>
+<span id="cart"><?=$cart ?></span>
 </li>
 </ul>
 <br>
