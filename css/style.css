@@ -453,7 +453,7 @@ body {
 }
 
 #products h1 {
-    font-family: "Great Vibes", Kreon;
+    font-family: 'Days One', sans-serif;
     font-size: 36px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -811,6 +811,7 @@ body {
     transform-origin: 50% 50% 0px;
     border-width: 0px;
     border-style: solid;
+    margin-top: 20px;
 }
 
 .form-btn:hover {
@@ -830,7 +831,7 @@ body {
 }
 
 .adress,
-.call {
+.call, .person {
     line-height: 1.5;
     text-align: center;
     color: #666;
@@ -882,6 +883,54 @@ body {
 .link-item i:hover {
     color: #71b321;
 }
+
+
+.heading {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.multiselect {
+    width: 200px;
+    margin: 0 auto;
+   
+  }
+  
+  .selectBox {
+    position: relative;
+    text-align: center;
+  }
+  
+  .selectBox select {
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #checkboxes input {
+      margin-right: 7px;
+  }
+
+  #checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+  }
+  
+  #checkboxes label {
+    display: block;
+  }
+  
+  #checkboxes label:hover {
+    background-color: #1e90ff;
+  }
 
 
 /* <------------- Footer ------------->*/

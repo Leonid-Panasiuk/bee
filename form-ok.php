@@ -1,8 +1,25 @@
 <?php
 $name = $_GET['name'];
 $phone = $_GET['phone'];
-$cart = $_GET['cart'];
-$delivery = $_GET['delivery'];
+$check = $_GET['check_list'];
+
+}
+
+echo '<ul class="list_info">';
+echo '<li>';
+echo '<span>Ф.И.O.: </span>';
+echo $name;
+echo '</li>';
+echo '<li>';
+echo '<span>Телефон: </span>';
+echo $phone;
+echo '</li>';
+echo '<li>';
+echo '<span>Корзина: </span>';
+echo $data;
+echo '</li>';
+echo '</ul>';
+
 ?>
 
 <!DOCTYPE html>
@@ -108,8 +125,8 @@ $delivery = $_GET['delivery'];
 <span id="tel"><?=$phone ?></span>
 </li>
 <li>
-<span>Товар: </span>
-<span id="cart"><?=$cart ?></span>
+<span>Корзина: </span>
+<span id="check"><?=$check ?></span>
 </li>
 </ul>
 <br>

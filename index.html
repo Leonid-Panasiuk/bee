@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
     <title>Bee</title>
 </head>
 
@@ -209,18 +210,21 @@
                     <ul class="about-list">
                         <li class="about-list-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Интернет магазин "Золотой сот" предлагает экологическую продукцию пчеловодства в Украине по приемлемым ценам;<span>
+                            <span>Интернет магазин "Золотой сот" предлагает экологическую продукцию пчеловодства в
+                                Украине;<span>
                         </li>
                         <li class="about-list-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Мы работаем с проверенными производителями и осуществляем доставку в каждый уголок нашей страны;<span>
+                            <span>Мы работаем с проверенными производителями и осуществляем доставку в каждый уголок
+                                нашей страны;<span>
                         </li>
                         <li class="about-list-item">
                             <i class="fas fa-check-circle"></i>
                             <span>
-                                В каталоге компании большой выбор инвентаря и продуктов для пчеловодства, а также много других, полезных для здоровья, природных товаров, натурального происхождения;<span>
+                                В каталоге компании большой выбор инвентаря и продуктов для пчеловодства, а также много
+                                других, полезных для здоровья, природных товаров, натурального происхождения;<span>
                         </li>
-                    
+
                     </ul>
                 </div>
             </div>
@@ -267,20 +271,45 @@
                 <div class="col-xl-4 col-lg-4 col-md-4 col-12  text-center">
                     <form action="send.php" method="post">
                         <div class="form-group">
-                            <label>Имя</label>
+                            <label>Ф.И.О</label>
                             <input name="name" type="text" class="form-control" id="exampleInputEmail1"
-                                autocomplete="off" placeholder="Имя" required>
+                                autocomplete="off" placeholder="Ф.И.О" required>
                         </div>
                         <div class="form-group">
                             <label>Телефон</label>
                             <input name="phone" type="text" class="form-control" id="exampleInputPassword1"
-                                autocomplete="off" placeholder="Phone" required>
+                                autocomplete="off" placeholder="Телефон" required>
                         </div>
-                        <div class="form-group">
-                            <label>Товар</label>
-                            <input name="cart" type="text" class="form-control" id="exampleInputPassword1"
-                                autocomplete="off" placeholder="Товар" required>
-                        </div>
+                        <div class="form-group multiselect">
+                            <div class="selectBox">
+                              <select>
+                                <option>Добавить в корзину</option>
+                              </select>
+                              <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxes">
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="Варотом">Варотом</label>
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="Варостоп">Варостоп</label>
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="Фумисан">Фумисан</label>
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="Дымарь оцинкованный">Дымарь оцинкованный</label>
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="Вощина">Вощина</label>
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="Акарасан">Акарасан</label>
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="СтопМоль">СтопМоль</label>
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="Байварол">Байварол</label>
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="Фильтр для меда">Фильтр для меда</label>
+                                <label>
+                                <input  type="checkbox" name="check_list[]" value="Бипин">Бипин</label>
+                            </div>
+                          </div>
                         <button type="submit" value="Submit" class="form-btn">Отправить</button>
                     </form>
                 </div>
@@ -288,8 +317,10 @@
                 <div class="col-xl-6 col-lg-6 col-md-6 col-12 text-center contact-wrap">
                     <p class="info">Контактная Информация</p>
                     <p class="adress">Одесская область с.Покровка</p>
-                    <p class="call">тел: <span class="phone">+380988442665</span></p>
-                    <p class="mail">Mail: podorojnyuks@ukr.net</p>
+                    <p class="person">Контактна особа: Віталій</p>
+                    <p class="call">тел: <span class="phone">096 565 25 25</span><br>
+                    </p>
+                    <p class="mail">Mail: goldensot@ukr.net</p>
                 </div>
             </div>
         </div>
