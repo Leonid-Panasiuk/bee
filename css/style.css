@@ -369,7 +369,8 @@ body {
 }
 
 .beetox {
-    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(111, 179, 33);
     line-height: 59px;
     font-weight: 900;
@@ -479,11 +480,6 @@ body {
     margin-top: 50px;
 }
 
-.product-col {
-    margin-top: 70px;
-}
-
-
 .product-col img {
     transition: all 0.2s;
 }
@@ -500,7 +496,7 @@ body {
     font-size: 1.125rem;
     font-weight: 400;
     transition: all 0.2s;
-    height: 50px;
+    margin-bottom: 0;
 }
 
 .product-col p:hover {
@@ -656,9 +652,8 @@ body {
 #feedback {
     background-image: url(../img/bg-2.jpg);
     background-size: cover;
-    padding: 85px 0 70px;
-    text-align: center;
-    padding: 5% 20%;
+    padding: 85px 10px 70px;
+    text-align: justify;
     margin-top: 80px;
 }
 
@@ -666,6 +661,8 @@ body {
 .user {
     width: 100px;
     height: 100px;
+    margin: 0 auto;
+    display: block;
 }
 
 #feedback p:first-child {
@@ -691,6 +688,7 @@ body {
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
+    text-align: center;
 }
 
 /* <------------- Blog ------------->*/
@@ -1177,9 +1175,9 @@ body {
         margin-bottom: 25px;
     }
 
-    .product-col p {
+    /* .product-col p {
         height: 90px;
-    }
+    } */
 
     .blog-card {
         margin-right: 0 !important;
