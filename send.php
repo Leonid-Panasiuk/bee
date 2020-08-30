@@ -18,7 +18,6 @@ $data = implode(",  ", $_POST['check_list']);
          Телефон: $phone\n 
          Корзина: $data\n";
 
-
          echo '<style>';
          echo 'h1 {';
          echo 'text-align: center;';
