@@ -645,6 +645,8 @@ body {
 
 .about-pic {
     border-radius: 50px;
+    width: 400px;
+    height: 250px!important;
 }
 
 /* <------------- Feedback ------------->*/
@@ -1040,9 +1042,6 @@ body {
         font-size: 25px;
     }
 
-    .about-pic {
-        height: 300px!important;
-    }
 
     #hero {
         height: 80vh;
