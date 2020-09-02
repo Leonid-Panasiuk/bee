@@ -38,6 +38,12 @@ body {
     color: black !important;
 }
 
+.navbar-nav {
+    list-style: circle!important;
+    list-style: outside!important;
+    list-style-position: inside!important;
+}
+
 .navbar-toggler:focus {
     outline: none;
 }
@@ -450,6 +456,14 @@ body {
     color: #666;
     font-weight: 300;
     margin: 0;
+}
+
+/* <------------- Desc ------------->*/
+
+#desc {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 20px;
 }
 
 /* <------------- Products ------------->*/
