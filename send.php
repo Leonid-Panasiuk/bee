@@ -9,6 +9,7 @@ $data = implode(",  ", $_POST['check_list']);
         $name = stripslashes(htmlspecialchars($_POST['name']));
         $phone = stripslashes(htmlspecialchars($_POST['phone']));
         $data = implode(",  ", $_POST['check_list']);
+        $headers = "Content-Type: text/plain; charset=UTF-8";
         $from = 'From: GoldenSot'; 
         $to = 'lona.panasuk@gmail.com'; // send to this address
         $subject = 'GoldenSot'; //subject line in email
@@ -50,4 +51,4 @@ $data = implode(",  ", $_POST['check_list']);
          echo '<a href="javascript: history.back(-1);">заполните заявку еще раз</a>';
          echo '</p>';
         
-        mail($to, $subject, $message); ?>
+        mail($to, $subject, $message, $headers); ?>
